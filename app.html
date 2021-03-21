@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daniel_Studios_Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/main.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+</head>
+<body onload="start()">
+	<div id="container_all">
+		<div id="calc_frame">
+			<div id="display">
+				<center>
+					<input  type="text" name="disp_arg" id="disp_arg" value="" onchange="calc()" readonly="true">
+					<input  type="number" name="disp_fin" id="disp_fin" value="0" readonly="true"><button id="chan" onclick="chan()" class="buttons_key_spec">†</button>
+			</center>
+			</div>
+			<div id="buttons">
+				<div id="normal">
+				<button id="plus" name="plus" class="buttons_key" onclick="add_func('+')">+</button>
+				<button id="minus" name="minus" class="buttons_key" onclick="add_func('-')">-</button>
+				<button id="times" name="times" class="buttons_key" onclick="add_func('*')">X</button>
+				<button id="divide" name="divide" class="buttons_key" onclick="add_func('/')">/</button>
+				<button id="seven" name="seven" class="buttons_key" onclick="add_arg(7)">7</button>
+				<button id="eight" name="eight" class="buttons_key" onclick="add_arg(8)">8</button>
+				<button id="nine" name="nine" class="buttons_key" onclick="add_arg(9)">9</button>
+				<button id="show_keys" name="show_keys" class="buttons_key" onclick="hide()">Keys</button>
+				<button id="four" name="four" class="buttons_key" onclick="add_arg(4)">4</button>
+				<button id="five" name="five" class="buttons_key" onclick="add_arg(5)">5</button>
+				<button id="six" name="six" class="buttons_key" onclick="add_arg(6)">6</button>				
+				<button id="AC" name="AC" class="buttons_key" onclick="clare()">AC</button>
+				<button id="one" name="one" class="buttons_key" onclick="add_arg(1)">1</button>
+				<button id="two" name="two" class="buttons_key" onclick="add_arg(2)">2</button>
+				<button id="three" name="three" class="buttons_key" onclick="add_arg(3)">3</button>
+				<button id="equal_to" name="equal_to" class="buttons_key" onclick="calc()">=</button>
+				<button id="zero" name="zero" class="buttons_key" onclick="add_arg(0)">0</button>
+				<button id="dot" name="dot" class="buttons_key" onclick="add_kin('.')">.</button>
+                <button id="del" name="del" class="buttons_key" onclick="slic()"><img src="assets/images/del.png"></button>
+            </div>
+           <div id="hidden">
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="sin()">sin x</button>
+           	   <button id="cos" name="cos" class="buttons_key_spec" onclick="cos()">cos x</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="tan()">tan x</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="add_func('%')">%</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="sign_cahge()">±</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="sqr()">x²</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="rai()">x^</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="pi()">&#x003C0;</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="log()">log x</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="ten()">10^ x</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="abs()">|x|</button>
+           	   <button id="sin" name="sin" class="buttons_key_spec" onclick="log_base()">log<sub>b</sub> x</button>
+           </div>
+			</div>
+		</div>
+	</div>
+ <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+         Responsive Leaderboard 
+        <ins class="adsbygoogle"
+                style="display:block;max-width:728px;width:100%;height:90px"
+                data-ad-client="ca-pub-9107540490929984"
+                data-ad-slot="4302666817"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+    -->
+</body>
+</html>
